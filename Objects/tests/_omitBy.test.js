@@ -1,8 +1,8 @@
 const omitBy = require('../tasks/_omitBy');
 
-const object = { 'a': 1, 'b': '2', 'c': 3 };
 
 describe('OmitBy function:', () => {
+    const object = { 'a': 1, 'b': '2', 'c': 3 };
 
     test('Function should return empty object', () => {
         expect(omitBy({}, (element) => typeof element === 'string')).toEqual({});
